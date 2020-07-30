@@ -22,6 +22,11 @@ Here is the description of the function’s parameters:
 * **densityWidth** is used to widen the violin. This parameter should be equal to 1 to reflect the result of the KDE values. Nevertheless, for visibility purposes, you are free to change the densityWidth to get a wider and visible shape. 
 * **arg**s is one or many arrays that represent the data set. In our case, args is four arrays of weight athletes, one array for each discipline.
 
+The function `processViolin()` returns a set of three arrays:
+* **xiData** is the xAxis data generated using the step and the range of the athletes’ weights data.
+* **results** includes all the violin charts data.
+* **stat** is the array with all the descriptive statistical coefficients.  
+
 ## Example
 Check [codePen demo](https://codepen.io/mushigh/pen/eYJXjVe)
 
@@ -31,6 +36,29 @@ let step = 1,
     precision = 0.00000000001,
     width = 3;
 let data = processViolin(step,precision,width,arr1, arr2,arr3);
+let violin1 = data.results[0],
+      violin2 = data.results[1],
+      violin3 = data.results[2];
+Highcharts.chart("container", {
+...
+series: [
+        {
+          name: "Violin 1",
+          color: "#ffa8d4",
+          data: violin1
+        },
+        {
+          name: "Violin 2",
+          color: "#a8d4ff",
+          data: violin2
+        },
+        {
+          name: "Violin 3",
+          color: "#ffa956",
+          data: violin3
+        }
+      ]
+});
 ```
 
 ## Remark
