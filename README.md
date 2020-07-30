@@ -3,7 +3,7 @@
 ## Overview
 This function (`processViolin()`) allows you to create a violin chart using [Highcharts](https://www.highcharts.com/): 
 
-*Check [codePen demo](https://codepen.io/mushigh/pen/eYJXjVe)*
+
 
 ![violin](img/violin-demo.png)
 
@@ -22,6 +22,7 @@ Here is the description of the function’s parameters:
 * **arg**s is one or many arrays that represent the data set. In our case, args is four arrays of weight athletes, one array for each discipline.
 
 ## Example
+Check [codePen demo](https://codepen.io/mushigh/pen/eYJXjVe)
 
 ```
 let arr1 = [1,2,2,2,5,8,9,9], arr2=[3,4,5], arr3=[1,2,2,3];
