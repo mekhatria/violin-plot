@@ -15,7 +15,7 @@ You can either add the function direclty in your code (see [violin-plot.js](viol
 <script src="https://marketing-demo.s3-eu-west-1.amazonaws.com/violinFunction/processViolin.js"></script>
 ````
 
-
+## Description
 Here is the description of the function’s parameters:
 * **step** is the minimum data set unit. The step is used to sample the data set and create the KDE.
 * **precision** is used to refine the violin plot at the extremities and in the thin spots, the smallest this parameter is the more points you get on the extremities and the thin spots on the chart.
