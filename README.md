@@ -1,4 +1,6 @@
-# violin-plot
+# Violin Plot
+
+## Overview
 This function (`processViolin()`) allows you to create a violin chart using [Highcharts](https://www.highcharts.com/): 
 
 *Check [codePen demo](https://codepen.io/mushigh/pen/eYJXjVe)*
@@ -6,7 +8,7 @@ This function (`processViolin()`) allows you to create a violin chart using [Hig
 ![violin](img/violin-demo.png)
 
 
-
+## Installation
 You can either add the function direclty in your code (see [violin-plot.js](violin-plot.js)) or use the following [link](https://marketing-demo.s3-eu-west-1.amazonaws.com/violinFunction/processViolin.js) (see below):
 ````
 <script src="https://marketing-demo.s3-eu-west-1.amazonaws.com/violinFunction/processViolin.js"></script>
