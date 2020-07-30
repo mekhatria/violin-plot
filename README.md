@@ -1,16 +1,17 @@
 # violin-plot
-This function allows you to create a violin chart using [Highcharts](https://www.highcharts.com/): 
+This function (`processViolin()`) allows you to create a violin chart using [Highcharts](https://www.highcharts.com/): 
 
 *Check [codePen demo](https://codepen.io/mushigh/pen/eYJXjVe)*
 
 ![violin](img/violin-demo.png)
 
 
-You can either add the function direclty in your code (see violin-plot.js) directly to your project or use the following link
+
+You can either add the function direclty in your code (see [violin-plot.js](violin-plot.js)) or use the following [link](https://marketing-demo.s3-eu-west-1.amazonaws.com/violinFunction/processViolin.js) (see below):
 ````
 <script src="https://marketing-demo.s3-eu-west-1.amazonaws.com/violinFunction/processViolin.js"></script>
 ````
-The function is built around the [kernel density estimation (KDE)](https://www.highcharts.com/blog/tutorials/data-science-and-highcharts-kernel-density-estimation/).
+
 
 Here is the description of the function’s parameters:
 * **step** is the minimum data set unit. The step is used to sample the data set and create the KDE.
@@ -27,3 +28,6 @@ let step = 1,
     width = 3;
 let data = processViolin(step,precision,width,arr1, arr2,arr3);
 ```
+
+## Remark
+The function is built around the [kernel density estimation (KDE)](https://www.highcharts.com/blog/tutorials/data-science-and-highcharts-kernel-density-estimation/).
